@@ -10,3 +10,4 @@ fcitx5-configtool
 で設定を行う
 
 mozc を追加して、切り替えのキー設定を行う
+
