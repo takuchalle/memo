@@ -27,6 +27,8 @@ bun create hono@latest my-app
 - `vite.confit.tx`のクライアントの設定を消す
 - `package.json`でクライアントをビルドしないようにする
 
+クライアント側のコードもいるのかもしれない
+
 [[SSG]] をするために `@hono/vite-ssg`をインストールする
 
 ```
@@ -38,6 +40,10 @@ bun add @hono/vite-ssg
 ```bash
 bun add @mdx-js/rollup
 ```
+
+`app/routes/test.mdx`を作ると `localhost/test` でアクセスできるようになる
+
+CSS が適用されない。
 
 [[frontmatter]] も使えるように
 
