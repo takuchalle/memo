@@ -1,3 +1,5 @@
+ちょっと古いけど、シンプルなブログを作るにはちょうどいいかも。もっと早くみつけたかった。
+https://github.com/yossydev/honox-blog-templete/
 ## hono setup
 まず bun をインストール
 ```bash
