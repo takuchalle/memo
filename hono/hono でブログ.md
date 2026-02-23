@@ -44,7 +44,7 @@ bun add @mdx-js/rollup
 
 `app/routes/test.mdx`を作ると `localhost/test` でアクセスできるようになる
 
-CSS が適用されない。
+CSS が適用されない。`dist/.vite/manifest.json` が必要そう。
 
 [[frontmatter]] も使えるように
 
