@@ -27,7 +27,8 @@ bun create hono@latest my-app
 - `vite.confit.tx`のクライアントの設定を消す
 - `package.json`でクライアントをビルドしないようにする
 
-クライアント側のコードもいるのかもしれない
+クライアント側のコードもいるのかもしれない => やっぱいらんわ
+https://zenn.dev/yusukebe/articles/4d6297f3be121a が参考になる
 
 [[SSG]] をするために `@hono/vite-ssg`をインストールする
 
