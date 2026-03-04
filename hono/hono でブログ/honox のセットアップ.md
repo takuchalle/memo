@@ -1,4 +1,4 @@
-ちょっと古いけど、シンプルなブログを作るにはちょうどいいかも。もっと早くみつけたかった。
+ちょっと古いけど、シンプルなブログを作るにはちょうどいい。
 https://github.com/yossydev/honox-blog-templete/
 ## hono setup
 まず bun をインストール
@@ -16,7 +16,7 @@ bun create hono@latest my-app
 bun run dev
 ```
 
-# hono x 
+## hono x 
 
 ```bash
 bun create hono@latest my-app
@@ -27,10 +27,7 @@ bun create hono@latest my-app
 
 - `app/client.ts`と`islands`を消す
 - `vite.confit.tx`のクライアントの設定を消す
-- `package.json`でクライアントをビルドしないようにする
-
-クライアント側のコードもいるのかもしれない => やっぱいらんわ
-https://zenn.dev/yusukebe/articles/4d6297f3be121a が参考になる
+- `package.json`でクライアントをビルドしないようにする => css を吐き出すために必要だった
 
 [[SSG]] をするために `@hono/vite-ssg`をインストールする
 

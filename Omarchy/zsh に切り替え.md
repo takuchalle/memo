@@ -37,4 +37,7 @@ fi
 
 export PATH=$PATH:~/.bun/bin
 ```
-	
+
+最新の`.zshrc`はここで管理してる。無駄に `chezmoi`を使ってる。
+
+https://github.com/takuchalle/dotfiles-chezmoi/blob/main/dot_zshrc
