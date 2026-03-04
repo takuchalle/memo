@@ -38,6 +38,31 @@ fi
 export PATH=$PATH:~/.bun/bin
 ```
 
+## emacs key bind
+
+```
+# enable emacs key bind
+bindkey -e
+```
+Ctrl+aで先頭に行ったり、Ctrl-eで末尾に行ったりするときに便利
+## fzf と ghq の連携
+
+```zsh
+fzf-src() {
+    local dir
+    dir=$(ghq list -p | fzf )
+    if [ -n $dir ]; then
+        BUFFER="cd $dir"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N fzf-src
+bindkey '^]' fzf-src
+```
+Ctrl+] で ghq 管理下にあるリポジトリを fzf で絞って移動してくれる。
+
+
 最新の`.zshrc`はここで管理してる。無駄に `chezmoi`を使ってる。
 
 https://github.com/takuchalle/dotfiles-chezmoi/blob/main/dot_zshrc
