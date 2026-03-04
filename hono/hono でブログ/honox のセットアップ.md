@@ -43,11 +43,17 @@ bun add @mdx-js/rollup
 
 `app/routes/test.mdx`を作ると `localhost/test` でアクセスできるようになる
 
-CSS が適用されない。`dist/.vite/manifest.json` が必要そう。
-
 [[frontmatter]] も使えるように
 
 ```bash
 bun add remark-frontmatter remark-mdx-frontmatter
 ```
+
+syntax highlight を有効にする [654d4493d939d67003ad6614dccdfed9bf7c0d5e](https://github.com/takuchalle/blog/commit/654d4493d939d67003ad6614dccdfed9bf7c0d5e)
+
+```
+bun add rehype-highlight
+```
+`rehype-highlight`をインストールして、`highlight.js`を有効にする。
+`rehype`でmarkdownから `hilight.js`で読める形に変換する感じだろうか。
 
