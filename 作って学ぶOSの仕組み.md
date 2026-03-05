@@ -26,3 +26,16 @@ There is NO WARRANTY, to the extent permitted by law.
 ```
 
 rust の toolchain のバージョンは書いてある通りにする。
+
+Hello World を qemu で動かそうとしたときに画面が出ずに下のようなログで止まった。
+
+```
+VNC server running on `::1:5900'
+```
+
+画面を出すバックエンド？みたいなのが足りてないみたい。qemu 関連を全部持ってくるという力技で解決。
+
+```
+yay -S qemu-full
+```
+
