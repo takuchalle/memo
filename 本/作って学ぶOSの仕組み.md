@@ -39,3 +39,19 @@ VNC server running on `::1:5900'
 yay -S qemu-full
 ```
 
+## 2 章
+
+no_std, no_main で無限ループするバイナリを `objdump`した。
+
+```
+target/x86_64-unknown-uefi/debug/wasabi.efi:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000140001000 <.text>:
+   140001000:	eb 00                	jmp    0x140001002
+   140001002:	eb fe                	jmp    0x140001002
+```
+
+`140001000`からプログラムは始まってるようす
