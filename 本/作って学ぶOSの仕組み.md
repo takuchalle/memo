@@ -41,6 +41,8 @@ yay -S qemu-full
 
 ## 2 章
 
+UEFI のアプリケーションを書いていく。[UEFIの仕様書はこちら](https://uefi.org/specs/UEFI/2.11/)
+
 no_std, no_main で無限ループするバイナリを `objdump`した。
 
 ```
@@ -55,3 +57,8 @@ Disassembly of section .text:
 ```
 
 `140001000`からプログラムは始まってるようす
+
+`repr(C)`は構造体のメモリレイアウトをC言語仕様に指定するもの。rustでは無駄なパディングを発生させないために構造体のメンバーを並び替える。UEFIはC言語を前提にしているのでメモリレイアウトを揃える必要がある。[公式ドキュメント](https://doc.rust-jp.rs/rust-nomicon-ja/other-reprs.html)や[このブログ](https://ryochack.hatenablog.com/entry/2018/03/23/184943)に詳しく載っている。
+
+EFI Graphics Output Protocol は[ここで定義されている](https://uefi.org/specs/UEFI/2.11/12_Protocols_Console_Support.html#graphics-output-protocol)
+
