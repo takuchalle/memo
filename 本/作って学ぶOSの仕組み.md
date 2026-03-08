@@ -62,3 +62,5 @@ Disassembly of section .text:
 
 EFI Graphics Output Protocol は[ここで定義されている](https://uefi.org/specs/UEFI/2.11/12_Protocols_Console_Support.html#graphics-output-protocol)
 
+`locate_protocol`の関数ポインタの定義のところに `extern "win64"`が書いてある。自作OSなのにWindowsの呼び出し規約に依存するのだろうか…？
+
