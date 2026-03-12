@@ -62,5 +62,8 @@ Disassembly of section .text:
 
 EFI Graphics Output Protocol は[ここで定義されている](https://uefi.org/specs/UEFI/2.11/12_Protocols_Console_Support.html#graphics-output-protocol)
 
-`locate_protocol`の関数ポインタの定義のところに `extern "win64"`が書いてある。自作OSなのにWindowsの呼び出し規約に依存するのだろうか…？
+p.61
+`locate_protocol`の関数ポインタの定義のところに `extern "win64"`が書いてある。x86_64 の UEFI の呼び出し規約は Windows と同じだからこれで良い。x86_64 以外のアーキテクチャだと System V。
 
+p.81
+`floor`関数が重いから呼ばないように式を変換してる
