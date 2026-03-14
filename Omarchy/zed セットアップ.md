@@ -1,3 +1,5 @@
+# インストール
+
 ```
 ❯ yay -S zed
 Sync Explicit (1): zed-0.225.10-1
@@ -15,4 +17,12 @@ resolving dependencies...
 
 インストールしようとしたら`vulkan`のドライバをどれにするか聞かれた。
 `vulkan`は低レベルなGPUのAPI。パフォーマンスが悪かったら違うのに変えるけど、とりあえずデフォルトの`nvidia-utils`にしてみた。
+
+1回目インストールに失敗したけど、`yay`で色々アップデートして再度試したらうまくいった。謎。
+
+# カスタマイズ
+
+## color scheme
+
+Catppuccin の Extension をインストールして、Catppuccin Mocha にする。
 
