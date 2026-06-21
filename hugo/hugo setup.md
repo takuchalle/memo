@@ -18,4 +18,8 @@ yay -S hugo
 hugo new project blog-hugo
 ```
 
-なんか全部 AI に作ってもらうか
+## テーマを自作
+
+```
+hugo new theme my-theme
+```
