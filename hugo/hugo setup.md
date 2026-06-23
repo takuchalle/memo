@@ -23,3 +23,5 @@ hugo new project blog-hugo
 https://themes.gohugo.io/themes/blowfish/
 
 なるべくシンプルなUIにしたいところ
+
+めっちゃ簡単にセットアップできた
