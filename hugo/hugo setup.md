@@ -18,8 +18,8 @@ yay -S hugo
 hugo new project blog-hugo
 ```
 
-## テーマを自作
+## テーマはblowfish
 
-```
-hugo new theme my-theme
-```
+https://themes.gohugo.io/themes/blowfish/
+
+なるべくシンプルなUIにしたいところ
